@@ -9,4 +9,12 @@ plugins:
   manifests.sdk.operatorframework.io/v2: {}
   scorecard.sdk.operatorframework.io/v2: {}
 projectName: middleware-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: workshop-operator.com
+  group: middleware
+  kind: Secretmanage
+  version: v1alpha1
 version: "3"

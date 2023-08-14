@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- middleware_v1alpha1_secretmanage.yaml
+#+kubebuilder:scaffold:manifestskustomizesamples

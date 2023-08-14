@@ -37,4 +37,21 @@ rules:
       - patch
       - update
       - watch
+  ##
+  ## Rules for middleware.workshop-operator.com/v1alpha1, Kind: Secretmanage
+  ##
+  - apiGroups:
+      - middleware.workshop-operator.com
+    resources:
+      - secretmanages
+      - secretmanages/status
+      - secretmanages/finalizers
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
 #+kubebuilder:scaffold:rules
